@@ -7,19 +7,86 @@
 		<property name="city" value="Noida" />
 		<property name="state" value="UP" />
 	</bean>
-	
+
 	<bean id="emp" class="spring.core.entity.Employee">
-		<property name="id" value="101"/>
+		<property name="id" value="101" />
 		<property name="name" value="Deepa" />
 		<property name="gender" value="female" />
 		<property name="address" ref="add" />
+		<property name="contacts">
+			<list>
+				<value>22873</value>
+				<value>42873</value>
+				<value>22573</value>
+				<value>22873</value>
+				<value>25873</value>
+				<value>22973</value>
+				<value>22873</value>
+				<value>22873</value> 
+			</list>
+		</property>
+		<property name="set">
+			<set>
+				<value>22873</value>
+				<value>42873</value>
+				<value>22573</value>
+				<value>22873</value>
+				<value>25873</value>
+				<value>22973</value>
+				<value>22873</value>
+				<value>22873</value> 
+			</set>
+		</property>
+		<property name="map">
+			<map>
+				<entry key="1" value="One"/>
+				<entry key="2" value="Two"/>
+				<entry key="3" value="Three"/>
+				<entry key="4" value="Four"/>
+				<entry key="1" value="Oneeee"/>
+			</map>
+		</property>
 	</bean>
-	
-	<bean name="emp2" class="spring.core.entity.Employee">
-		<constructor-arg name="id" value="102" type="int" />
+
+	<bean id="emp2" class="spring.core.entity.Employee">
+		<constructor-arg name="id" value="102" />
 		<constructor-arg name="name" value="Rupa" />
 		<constructor-arg name="gender" value="female" />
 		<constructor-arg name="address" ref="add" />
+		<constructor-arg name="contacts">
+			<list>
+				<value>928655</value>
+				<value>42873</value>
+				<value>22573</value>
+				<value>22873</value>
+				<value>25873</value>
+				<value>22973</value>
+				<value>22873</value>
+				<value>22873</value> 
+			</list>
+		</constructor-arg>
+		<constructor-arg name="set">
+			<set>
+				<value>22873</value>
+				<value>42873</value>
+				<value>22573</value>
+				<value>22873</value>
+				<value>25873</value>
+				<value>22973</value>
+				<value>22873</value>
+				<value>22873</value> 
+			</set>
+		</constructor-arg>
+		<constructor-arg name="map">
+			<map>
+				<entry key="1" value="One"/>
+				<entry key="2" value="Two"/>
+				<entry key="3" value="Three"/>
+				<entry key="4" value="Four"/>
+				<entry key="1" value="Oneeee"/>
+			</map>
+		</constructor-arg>
 	</bean>
+
 
 </beans>
