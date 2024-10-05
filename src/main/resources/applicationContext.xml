@@ -3,23 +3,25 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<!-- bean definitions here -->
-	<bean id="add" class="spring.core.entity.Address">
-		<property name="city" value="Noida" />
-		<property name="state" value="UP" />
-	</bean>
-	
+
+
 	<bean id="emp" class="spring.core.entity.Employee">
-		<property name="id" value="101"/>
+		<property name="id" value="101" />
 		<property name="name" value="Deepa" />
 		<property name="gender" value="female" />
-		<property name="address" ref="add" />
+		<property name="address" >
+		  <bean class="spring.core.entity.Address">
+			 <property name="city" value="Noida" />
+			 <property name="state" value="UP" />
+		  </bean>
+		</property>  
 	</bean>
-	
-	<bean name="emp2" class="spring.core.entity.Employee">
+
+	<!--<bean name="emp2" class="spring.core.entity.Employee">
 		<constructor-arg name="id" value="102" type="int" />
 		<constructor-arg name="name" value="Rupa" />
 		<constructor-arg name="gender" value="female" />
 		<constructor-arg name="address" ref="add" />
-	</bean>
+	</bean> -->
 
 </beans>

@@ -12,8 +12,8 @@ public class App {
 		Employee bean = (Employee) ioc.getBean("emp");
 		System.out.println(bean);
 		
-		Employee bean2 = (Employee) ioc.getBean("emp2");
-		System.out.println(bean2);
+//		Employee bean2 = (Employee) ioc.getBean("emp2");
+//		System.out.println(bean2);
 
 	}
 
