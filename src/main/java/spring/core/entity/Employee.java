@@ -22,7 +22,6 @@ public class Employee {
 	public Employee(int id, String name, String gender, Address address, List<Integer> contacts, Set<Integer> set,
 			Map<Integer, String> map) {
 		super();
-		System.out.println("Employee.Employee(6)");
 		this.id = id;
 		this.name = name;
 		this.gender = gender;
@@ -30,6 +29,7 @@ public class Employee {
 		this.contacts = contacts;
 		this.set = set;
 		this.map = map;
+		System.out.println("6");
 	}
 
 	public Address getAddress() {
